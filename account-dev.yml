@@ -1,0 +1,127 @@
+spring:
+  name: account
+  profile: dev
+  profiles:
+    active: dev
+  rabbitmq:
+    host: 172.16.50.40
+    port: 5672
+  datasource:
+    config: classpath*:foscam_datasource_mysql_c3p0.xml
+  orm:
+    config: classpath*:foscam_mybatis_mysql_c3p0.xml
+
+activemq:
+  broker:
+    url: tcp://172.16.30.103:61616
+auth:
+  dubbo:
+    version: 1.0.0-DEV
+cn:
+  userzone:
+    synurl: ''
+com:
+  userzone:
+    synurl: ''
+db:
+  is:
+    encrypt: 0
+  login:
+    password: usr662606
+    username: usr_account
+  url: jdbc:mysql://172.16.30.100:3306/db_account?autoReconnect=true&characterEncoding=utf8&useUnicode=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+debug:
+  model: false
+dubbo:
+  account:
+    version: 1.0.0-DEV
+  cache:
+    location: /home/admin/cache/dubbo/account-remoting.cache
+  protocol:
+    dubbo:
+      port: 10000
+  registry:
+    url: 172.16.30.101:19555,172.16.30.102:19555,172.16.30.103:19555
+livechat:
+  email:
+    address: chenhanzhen@foscam.com
+log:
+  app:
+    level: DEBUG
+  base:
+    path: /home/admin/logs/account
+  common:
+    level: INFO
+  container:
+    level: INFO
+  dubbo:
+    level: INFO
+  foscam:
+    level: INFO
+  spring:
+    level: INFO
+  sql:
+    level: INFO
+mail:
+  account:
+    activate:
+      url: https://dev.myfoscam.com/user/active.html
+  offical:
+    account:
+      activate:
+        url: http://foscam.com:99/index/active
+  sendflag: true
+memcached:
+  proxy:
+    url: 172.16.30.30:12000
+notification:
+  dubbo:
+    version: 1.0.0-DEV
+notify:
+  email:
+    address: 445989344@qq.com
+oem:
+  web:
+    user:
+      data:
+        request:
+          domain: https://dev-gdpr.mycloudipc.com
+outer:
+  mail:
+    sender: foscam@myfoscam.com
+    sender.password: Fos554429
+    sender.username: foscam@myfoscam.com
+    smtp:
+      host: smtp.myfoscam.com
+      port: 25
+platform:
+  name: biz
+push:
+  url: https://dev-push-access.myfoscam.com:443
+redis:
+  master:
+    password: FosCloud20170301@Fostar}%Random72894
+  sentinel:
+    master:
+      name: mymaster
+    path1: 172.16.30.101:26379
+    path2: 172.16.30.102:26379
+    path3: 172.16.30.103:26379
+
+user:
+  data:
+    request:
+      download: http://test-download.myfoscam.com:9001
+web:
+  ivy:
+    portal:
+      domain: https://dev.ivyiot.com
+  portal:
+    domain: https://dev.myfoscam.com
+  project:
+    name: account
+  user:
+    data:
+      request:
+        domain: https://dev-extract.myfoscam.com
+zone: cn

@@ -1,0 +1,130 @@
+spring:
+    name: account
+    profile: test
+    profiles:
+        active: test
+    rabbitmq:
+        host: 172.16.50.40
+        port: 5672
+    datasource:
+        config: classpath*:account_dynamic_dataSource_c3p0.xml
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+activemq:
+    broker:
+        url: tcp://172.16.40.7:61616
+auth:
+    dubbo:
+        version: 1.0.0-TEST
+biz:
+    readOnly:
+        password: 82981A6B25856C4205BEAB95931ECDEA
+        url: jdbc:mysql://172.16.40.8:3306/db_account
+        username: 5119CC42DACCCDD2A0417FC613FE0A93
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    is:
+        encrypt: 1
+    login:
+        password: 82981A6B25856C4205BEAB95931ECDEA
+        username: 5119CC42DACCCDD2A0417FC613FE0A93
+    slave:
+        encrypt: 1
+    url: jdbc:mysql://172.16.40.8:3306/db_account
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-TEST
+    cache:
+        location: /home/admin/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: 172.16.40.5:19555,172.16.40.6:19555,172.16.40.7:19555
+livechat:
+    email:
+        address: 18487096609@163.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/admin/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://test.myfoscam.com/user/active.html
+    offical:
+        account:
+            activate:
+                url: http://foscam.com:99/index/active
+    sendflag: true
+memcached:
+    proxy:
+        url: 172.16.40.5:12000
+notification:
+    dubbo:
+        version: 1.0.0-TEST
+notify:
+    email:
+        address: 1350629834@qq.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://test.myfoscam.com
+outer:
+    mail:
+        sender: foscam@myfoscam.com
+        sender.password: Fos554429
+        sender.username: foscam@myfoscam.com
+        smtp:
+            host: smtp.myfoscam.com
+            port: 25
+platform:
+    name: biz
+push:
+    url: https://test-push-access.myfoscam.com:443
+redis:
+    master:
+        password: FosCloud20170301@Fostar}%Random72894
+    sentinel:
+        master:
+            name: mymaster
+        path1: 172.16.40.33:26379
+        path2: 172.16.40.34:26379
+        path3: 172.16.40.35:26379
+
+user:
+    data:
+        request:
+            download: http://test-download.myfoscam.com:9001
+web:
+    portal:
+        domain: https://test.myfoscam.com
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://test-extract.myfoscam.com
+zone: com
