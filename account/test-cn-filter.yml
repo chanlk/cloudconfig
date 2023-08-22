@@ -1,0 +1,106 @@
+activemq:
+    broker:
+        url: tcp://172.16.20.7:61616
+auth:
+    dubbo:
+        version: 1.0.0-TEST-CN
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    login:
+        password: foscam123
+        username: root
+    url: jdbc:mysql://172.16.20.72:3306/db_account?autoReconnect=true&characterEncoding=utf8&useUnicode=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-TEST-CN
+    cache:
+        location: /home/admin/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: 172.16.20.5:19555,172.16.20.6:19555,172.16.20.7:19555
+livechat:
+    email:
+        address: m18566311758@163.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/admin/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://test.myfoscam.cn/user/active.html
+    sendflag: true
+memcached:
+    proxy:
+        url: 172.16.20.5:12000
+notification:
+    dubbo:
+        version: 1.0.0-TEST-CN
+notify:
+    email:
+        address: 1350629834@qq.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://test.myfoscam.cn
+outer:
+    mail:
+        sender: foscam@myfoscam.com
+        sender.password: Fos554429
+        smtp:
+            host: smtp.myfoscam.com
+            port: 25
+platform:
+    name: biz
+portal:
+    dubbo:
+        version: 1.0.0-TEST-CN
+push:
+    url: https://test-push-access.myfoscam.cn:443
+redis:
+    sentinel:
+        master:
+            name: mymaster
+        path1: 172.16.20.33:26379
+        path2: 172.16.20.34:26379
+        path3: 172.16.20.35:26379
+spring:
+    datasource:
+        config: classpath*:foscam_datasource_mysql_c3p0.xml
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+
+web:
+    portal:
+        domain: https://test.myfoscam.cn
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://test-extract.myfoscam.com
+zone: cn

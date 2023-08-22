@@ -1,0 +1,102 @@
+activemq:
+    broker:
+        url: tcp://172.16.50.203:61616
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    is:
+        encrypt: 0
+    login:
+        password: foscam123
+        username: root
+    url: jdbc:mysql://172.16.50.199:3306/db_account?autoReconnect=true&characterEncoding=utf8&useUnicode=true&zeroDateTimeBehavior=convertToNull
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-SandBox-CN
+    cache:
+        location: /home/admin/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: 172.16.50.201:19555,172.16.50.202:19555,172.16.50.203:19555
+livechat:
+    email:
+        address: m18566311758@163.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/admin/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://sandboxt-web.ivyiot.cn/user/active.html
+    sendflag: true
+notification:
+    dubbo:
+        version: 1.0.0-SandBox-CN
+notify:
+    email:
+        address: test34@foscam.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://test-gdpr.mycloudipc.com
+outer:
+    mail:
+        sender: ivyiot@ivyiot.cn
+        sender.password: IvyiTs#)577B-dsd6fdydfg-ddsTS
+        smtp:
+            host: smtp.mxhichina.com
+            port: 25
+platform:
+    name: biz
+redis:
+    master:
+        password: FosCloud20170301@Fostar}%Random72894
+    sentinel:
+        master:
+            name: mymaster
+        path1: 172.16.50.201:26379
+        path2: 172.16.50.202:26379
+        path3: 172.16.50.203:26379
+spring:
+    datasource:
+        config: classpath*:foscam_datasource_mysql_c3p0.xml
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+user:
+    data:
+        request:
+            download: http://test-download.myfoscam.com:9001
+web:
+    portal:
+        domain: https://sandboxt-web.ivyiot.cn
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://test-extract.myfoscam.com
+zone: cn

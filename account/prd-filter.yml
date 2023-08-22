@@ -1,0 +1,125 @@
+activemq:
+    broker:
+        url: tcp://biz-activemq01.myfoscam.org:61616
+auth:
+    dubbo:
+        version: 1.0.0-PRD
+biz:
+    readOnly:
+        password: 917A9E769446F2EE18B28A64A571A26AC563901FD3EE0437E2114AB0F8130793
+        url: jdbc:mysql://biz-mysql-slave-01.myfoscam.org:3306/db_account
+        username: 565B540544E84A764FE209C298F901F6
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    is:
+        encrypt: 1
+    login:
+        password: 8DF3D8A353F2776D4D914B02329FC4EB
+        username: 5119CC42DACCCDD2A0417FC613FE0A93
+    slave:
+        encrypt: 1
+    url: jdbc:mysql://biz-mysql01.myfoscam.org:3306/db_account
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-PRD
+    cache:
+        location: /home/ubuntu/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: biz-zookeeper01.myfoscam.org:19555,biz-zookeeper02.myfoscam.org:19555,biz-zookeeper03.myfoscam.org:19555
+livechat:
+    email:
+        address: support@foscam.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/ubuntu/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://www.myfoscam.com/user/active.html
+    offical:
+        account:
+            activate:
+                url: http://foscam.com/index/active
+    sendflag: true
+memcached:
+    proxy:
+        url: biz-magent01.myfoscam.org:12000
+notification:
+    dubbo:
+        version: 1.0.0-PRD
+notify:
+    email:
+        address: support@foscam.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://notice.ivyiot.io
+outer:
+    mail:
+        sender: foscam@myfoscam.com
+        sender.password: Fos554429
+        sender.username: foscam@myfoscam.com
+        smtp:
+            host: smtp.myfoscam.com
+            port: 25
+platform:
+    name: biz
+portal:
+    dubbo:
+        version: 1.0.0-RPD
+push:
+    url: https://push-access.myfoscam.com:443
+redis:
+    master:
+        password: FosCloud20170301@Fostar}%Random72894
+    sentinel:
+        master:
+            name: bizmaster
+        path1: biz-redis-sentine01.myfoscam.org:26379
+        path2: biz-redis-sentine02.myfoscam.org:26379
+        path3: biz-redis-sentine03.myfoscam.org:26379
+spring:
+    datasource:
+        config: classpath*:account_dynamic_dataSource_c3p0.xml
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+user:
+    data:
+        request:
+            download: http://download.myfoscam.com:9001
+web:
+    portal:
+        domain: https://www.myfoscam.com
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://extract.myfoscam.com
+zone: com

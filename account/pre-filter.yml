@@ -1,0 +1,108 @@
+activemq:
+    broker:
+        url: tcp://10.0.4.205:61616
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    is:
+        encrypt: 0
+    login:
+        password: foscam123
+        username: root
+    url: jdbc:mysql://10.0.4.203:3306/db_account?autoReconnect=true&characterEncoding=utf8&useUnicode=true&zeroDateTimeBehavior=convertToNull
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-PRE
+    cache:
+        location: /home/ubuntu/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: 10.0.4.200:19555,10.0.4.204:19555,10.0.4.205:19555
+livechat:
+    email:
+        address: support@foscam.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/ubuntu/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://pre.myfoscam.com/user/active.html
+    offical:
+        account:
+            activate:
+                url: http://foscam.com/index/active
+    sendflag: true
+memcached:
+    proxy:
+        url: 10.0.4.200:12000
+notification:
+    dubbo:
+        version: 1.0.0-PRE
+notify:
+    email:
+        address: support@foscam.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://gdpr.mycloudipc.com
+outer:
+    mail:
+        sender: foscam@myfoscam.com
+        sender.password: Fos554429
+        smtp:
+            host: smtp.myfoscam.com
+            port: 25
+platform:
+    name: biz
+redis:
+    master:
+        password: FosCloud20170301@Fostar}%Random72894
+    sentinel:
+        master:
+            name: mymaster
+        path1: 10.0.4.200:26379
+        path2: 10.0.4.204:26379
+        path3: 10.0.4.205:26379
+spring:
+    datasource:
+        config: 'classpath*:foscam_datasource_mysql_c3p0.xml '
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+user:
+    data:
+        request:
+            download: http://download.myfoscam.com:9001
+web:
+    portal:
+        domain: https://pre.myfoscam.com
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://extract.myfoscam.com

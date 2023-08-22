@@ -1,0 +1,113 @@
+activemq:
+    broker:
+        url: tcp://sdbx-biz-activemq01.myfoscam.org:61616
+auth:
+    dubbo:
+        version: 1.0.0-SANDBOX
+biz:
+    readOnly:
+        password: 123456x
+        url: jdbc:mysql://sdbx-slave-mysql01.myfoscam.org:3306/db_account
+        username: root
+cn:
+    userzone:
+        synurl: ''
+com:
+    userzone:
+        synurl: ''
+db:
+    is:
+        encrypt: 0
+    login:
+        password: 123456x
+        username: root
+    slave:
+        encrypt: 0
+    url: jdbc:mysql://sdbx-biz-mysql01.myfoscam.org:3306/db_account
+debug:
+    model: false
+dubbo:
+    account:
+        version: 1.0.0-SANDBOX
+    cache:
+        location: /home/admin/cache/dubbo/account-remoting.cache
+    protocol:
+        dubbo:
+            port: 10000
+    registry:
+        url: sdbx-biz-zookeeper01.myfoscam.org:19555,sdbx-biz-zookeeper02.myfoscam.org:19555,sdbx-biz-zookeeper03.myfoscam.org:19555
+livechat:
+    email:
+        address: 18487096609@163.com
+log:
+    app:
+        level: INFO
+    base:
+        path: /home/admin/logs/account
+    common:
+        level: INFO
+    container:
+        level: INFO
+    dubbo:
+        level: INFO
+    foscam:
+        level: INFO
+    spring:
+        level: INFO
+    sql:
+        level: INFO
+mail:
+    account:
+        activate:
+            url: https://sdbx-www.myfoscam.com/user/active.html
+    offical:
+        account:
+            activate:
+                url: http://foscam.com:99/index/active
+    sendflag: true
+memcached:
+    proxy:
+        url: sdbx-biz-magent01.myfoscam.org:12000
+notification:
+    dubbo:
+        version: 1.0.0-SANDBOX
+notify:
+    email:
+        address: test34@foscam.com
+oem:
+    web:
+        user:
+            data:
+                request:
+                    domain: https://test-gdpr.mycloudipc.com
+platform:
+    name: biz
+portal:
+    dubbo:
+        version: 1.0.0-SANDBOX
+redis:
+    sentinel:
+        master:
+            name: sdbxbizmaster
+        path1: sdbx-biz-redis-sentine01.myfoscam.org:26379
+        path2: sdbx-biz-redis-sentine02.myfoscam.org:26379
+        path3: sdbx-biz-redis-sentine03.myfoscam.org:26379
+spring:
+    datasource:
+        config: classpath*:account_dynamic_dataSource_c3p0.xml
+    orm:
+        config: classpath*:foscam_mybatis_mysql_c3p0.xml
+user:
+    data:
+        request:
+            download: https://sdbx-download.myfoscam.com:9001
+web:
+    portal:
+        domain: https://sdbx-www.myfoscam.com
+    project:
+        name: account
+    user:
+        data:
+            request:
+                domain: https://test-extract.myfoscam.com
+zone: com
