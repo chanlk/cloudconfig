@@ -10,6 +10,8 @@ spring:
         config: classpath*:account_dynamic_dataSource_c3p0.xml
     orm:
         config: classpath*:foscam_mybatis_mysql_c3p0.xml
+    orm2:
+        config: classpatch222
 activemq:
     broker:
         url: tcp://172.16.40.7:61616

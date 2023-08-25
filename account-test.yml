@@ -8,12 +8,13 @@ spring:
     port: 5672
   datasource:
     config: classpath*:account_dynamic_dataSource_c3p0.xml
-  orm:
-    config: classpath*:foscam_mybatis_mysql_c3p0.xml
     url: jdbc:mysql://172.16.40.8:3306/db_account
     username: usr_account
     password: usr662606
-    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+  orm:
+    config: classpath*:foscam_mybatis_mysql_c3p0.xml
 
 
 
