@@ -17,10 +17,10 @@ spring:
     config: classpath*:foscam_mybatis_mysql_c3p0.xml
 
   redis:
-    sentinel: 　　　 #与Redis环境配置的保持一致
-    master: mymaster
-    #从节点集合
-    nodes: 172.16.40.33:26379,172.16.40.34:26379,172.16.40.35:26379
+    sentinel:
+      master: mymaster  #与Redis环境配置的保持一致
+      #从节点集合
+      nodes: 172.16.40.33:26379,172.16.40.34:26379,172.16.40.35:26379
     password: FosCloud20170301@Fostar}%Random72894
     timeout: 1000
     jedis.pool:
